@@ -82,12 +82,20 @@ function solveProblem()
         //spraken van toename
         //dus de value van het soort-veld moet 2 worden
         //het toename-percentage is dan (ber_factor -1) * 100
+        soort.value = 2 
+        soort.classList.remove("is-invalid");
+        percentage.value = (ber_factor -1) * 100
+        percentage.classList.remove( "is-invalid" ) 
     }
     else
     {
         //spraken van afname
         //dus de value van soort-veld moet 3 worden
         //het afname-percentage is dan (1- ber_factor) * 100
+        soort.value = 3
+        soort.classList.remove("is-invalid");
+        percentage.value = (1- ber_factor) * 100.
+        percentage.classList.remove( "is-invalid" )
     }
     }
 }
