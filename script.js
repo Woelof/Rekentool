@@ -64,5 +64,31 @@ function checkInformation()
 function solveProblem()
 {
     //alert("Hij doet het en Jason ziet er uit als een toffe banaan")
+    if(oud.value != "" && soort.value != "" && percentage.value != "")
+    {
+        nieuw.value = oud.value * ber_factor
+    }
+    else if (nieuw.value != "" && soort.value != "" && percentage.value != "")
+    {
+        oud.value = nieuw.value / ber_factor
+    }
+    else
+    {
+    ber_factor = nieuw.value / oud.value
+    factor.value = ber_factor 
+    deler.value = ber_factor
+    if (ber_factor > 1)
+    {
+        //spraken van toename
+        //dus de value van het soort-veld moet 2 worden
+        //het toename-percentage is dan (ber_factor -1) * 100
+    }
+    else
+    {
+        //spraken van afname
+        //dus de value van soort-veld moet 3 worden
+        //het afname-percentage is dan (1- ber_factor) * 100
+    }
+    }
 }
 
